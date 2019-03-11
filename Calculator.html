@@ -1,0 +1,488 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <style type="text/css">
+    body
+    {
+        width:100%;
+        height:100%;
+        background-color:#CC649A;
+    }
+
+    .main
+    {
+     width:30%;
+     height:70%;
+     position :absolute;
+     left:35%;
+     background-color: #FCFFC7;
+    }
+   /* input[type='text'],select
+    {
+        font-size:20px;
+    } */
+    .button1
+    {
+        width: 15%;
+        height: 14%;
+        text-align:center;
+        font-size:200%;
+        font-weight:bold;
+        border-radius:10%;
+        position: absolute;
+        top: 20%;
+        left:3%;
+    }
+    .button2
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+        font-weight:bold;
+         position:absolute;
+         top: 20%;
+         left:22%;
+    }
+    .button3
+    {
+         width: 15%;
+         height: 14%;
+         background-image:url("back.png");
+         background-size:9vmin;
+         background-repeat:no-repeat;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 20%;
+         left:42%;
+    }
+    .button4
+    {
+         width: 15%;
+         height: 14%;
+         background-image:url("divide.png");
+         text-align: center;
+         background-size:9vmin;
+         background-repeat:no-repeat;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 20%;
+         left:62%;
+    }
+    .button5
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+        color:white;
+        background-color:orange;
+         position:absolute;
+         top: 20%;
+         left:82%;
+    }
+    .button6
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+           font-weight:bold;
+         top: 37%;
+         left:3%;
+    }
+    .button7
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+        font-weight:bold;
+         top: 37%;
+         left:22%;
+    }
+    .button8
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+        font-weight:bold;
+         top: 37%;
+         left:42%;
+    }
+    .button9
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+        font-weight:bold;
+         border-radius:10%;
+         position:absolute;
+         top: 37%;
+         left:62%;
+    }
+    .button10
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+                 background-color:orange;
+         position:absolute;
+         top: 37%;
+                color:white;
+         left:82%;
+    }
+    .button11
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 53%;
+        font-weight:bold;
+         left:3%;
+    }
+    .button12
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 53%;
+        font-weight:bold;
+         left:22%;
+    }
+    .button13
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 53%;
+        font-weight:bold;
+         left:42%;
+    }
+    .button14
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 53%;
+         left:62%;
+        font-weight:bold;
+    }
+    .button15
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+                 background-color:orange;
+         border-radius:10%;
+         position:absolute;
+         top: 53%;
+         left:82%;
+        color:white;
+    }
+    .button16
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 70%;
+        font-weight:bold;
+         left:3%;
+    }
+    .button17
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 70%;
+         left:22%;
+        font-weight:bold;
+    }
+    .button18
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 70%;
+         left:42%;
+        font-weight:bold;
+    }
+    .button19
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 70%;
+         left:62%;
+        font-weight:bold;
+    }
+    .button20
+    {
+         width: 15%;
+         height: 12%;
+         text-align: center;
+                 background-color:orange;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 70%;
+        color:white;
+         left:82%;
+    }
+    .button21
+    {
+         width: 35%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 85%;
+        font-weight:bold;
+         left:3%;
+    }
+    .button22
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 85%;
+         left:42%;
+        font-weight:bold;
+    }
+    .button23
+    {
+         width: 15%;
+         height: 14%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 85%;
+        font-weight:bold;
+         left:62%;
+    }
+    .button24
+    {
+         width: 15%;
+         height: 12%;
+         text-align: center;
+         font-size: 200%;
+         border-radius:10%;
+         position:absolute;
+         top: 85%;
+         background-color:orange;
+        color:white;
+         left:82%;
+    }
+    </style>
+    <script type="text/javascript">
+        function clear1()
+        {
+            document.forms[0].elements[0].value=null;
+        }
+        function abs()
+        {
+            var a;
+            a=parseInt(document.forms[0].elements[0].value);
+            document.forms[0].elements[0].value=a*(-1);
+        }
+        function onecut()
+        {
+            var a,b;
+            a=parseInt(document.forms[0].elements[0].value);
+            b=parseInt(a/10);
+            document.forms[0].elements[0].value=b;
+        }
+        function nine()
+        {
+            var a;
+            a=document.forms[0].elements[0].value;
+            if(a==null)
+            {
+                document.forms[0].elements[0].value='9';
+            }
+            document.forms[0].elements[0].value=a+'9';
+        }
+        function eight()
+        {
+            var a;
+            a=document.forms[0].elements[0].value;
+            if(a==null)
+                document.forms[0].elements[0].value='8';
+            document.forms[0].elements[0].value=a+'8';
+        }
+        function seven()
+        {
+            var a;
+            a=document.forms[0].elements[0].value;
+            if(a==null)
+                document.forms[0].elements[0].value='7';
+            document.forms[0].elements[0].value=a+'7';
+        }
+        function six()
+        {
+            var a;
+            a=document.forms[0].elements[0].value;
+            if(a==null)
+                document.forms[0].elements[0].value='6';
+            document.forms[0].elements[0].value=a+'6';
+        }
+        function five()
+        {
+            var a;
+            a=document.forms[0].elements[0].value;
+            if(a==null)
+                document.forms[0].elements[0].value='5';
+            document.forms[0].elements[0].value=a+'5';
+        }
+        function four()
+        {
+            var a;
+            a=document.forms[0].elements[0].value;
+            if(a==null)
+                document.forms[0].elements[0].value='4';
+            document.forms[0].elements[0].value=a+'4';
+        }
+        function three()
+        {
+            var a;
+            a=document.forms[0].elements[0].value;
+            if(a==null)
+                document.forms[0].elements[0].value='3';
+            document.forms[0].elements[0].value=a+'3';
+        }
+        function two()
+        {
+            var a;
+            a=document.forms[0].elements[0].value;
+            if(a==null)
+                document.forms[0].elements[0].value='2';
+            document.forms[0].elements[0].value=a+'2';
+        }
+        function one()
+        {
+            var a;
+            a=document.forms[0].elements[0].value;
+            if(a==null)
+                document.forms[0].elements[0].value='1';
+            document.forms[0].elements[0].value=a+'1';
+        }
+        function zero()
+        {
+            var a;
+            a=document.forms[0].elements[0].value;
+            if(a==null)
+                document.forms[0].elements[0].value='0';
+            document.forms[0].elements[0].value=a+'0';
+        }
+        function point()
+        {
+            var a;
+            a=document.forms[0].elements[0].value;
+            if(a==null)
+                document.forms[0].elements[0].value="0."
+            document.forms[0].elements[0].value=a+'.';
+        }
+         function divide1()
+        {
+            document.forms[0].elements[0].value+="/";
+        }
+        function plus()
+        {
+            document.forms[0].elements[0].value+="+";
+        }
+        function minus()
+        {
+            document.forms[0].elements[0].value+="-"; 
+        }
+        function mul()
+        {
+            document.forms[0].elements[0].value+="*";
+        }
+        function eq1()
+        {
+            var equals = eval(document.cals.mohan.value);
+            //alert("equals is :"+equals);
+            document.forms[0].elements[0].value="="+equals;
+        }
+    </script>
+  <title>Calculator </title>
+</head>
+<body>
+    <div class="main">
+        <form name=cals>
+        <input type="text"name="mohan" placeholder="KK AGARWAL"style=" width:98.2%; height:9%; position:absolute; top: 2%;font-size:30px;"/>
+        <input type="button" class="button1" value="C" onclick='clear1();'/>
+        <input type="button" class="button2" value="+/-" onclick='abs();'/>
+        <input type="button" class="button3" onclick='onecut();'/>
+        <input type="button" class="button4" onclick='divide1();'>
+        <input type="text" class="button5" value="K"/ disabled="disabled">
+        <input type="button" class="button6" value="7" onclick='seven();'/>
+        <input type="button" class="button7" value="8"onclick='eight();'/>
+        <input type="button" class="button8" value="9"onclick='nine();'/>
+        <input type="button" class="button9" value="X" onclick='mul();'/>
+        <input type="text" class="button10"value="K"/ disabled="disabled"/>
+        <input type="button" class="button11" value="4"onclick='four();'/>
+        <input type="button" class="button12" value="5"onclick='five();'/>
+        <input type="button" class="button13" value="6"onclick='six();'/>
+        <input type="button" class="button14" value="-"onclick='minus();'/>
+        <input type="text" class="button15" value="M"/ disabled="disabled"/>
+        <input type="button" class="button16" value="1"onclick='one();'/>
+        <input type="button" class="button17" value="2"onclick='two();'/>
+        <input type="button" class="button18" value="3"onclick='three();'/>
+        <input type="button" class="button19" value="+" onclick='plus()'/>
+        <input type="text" class="button20" value="A"disabled="disabled"/>
+        <input type="button" class="button21" value="0" onclick='zero();'/>
+        <input type="button" class="button22" value="."onclick='point();'/>
+        <input type="button" class="button23" value="="/ onclick='eq1();'>
+        <input type="text" class="button24" value="U" disabled="disabled"/>
+    </form>
+    </div>
+</body>
+
+</html>

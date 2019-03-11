@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Airthmetic Operation</title>
+	<script type="text/javascript">
+		function sum()
+		{
+			var a,b,o;
+			a=parseInt(document.forms[0].elements[0].value);
+			b=parseInt(document.forms[0].elements[1].value);
+			o=document.forms[0].elements[2].value;
+			if(o=='+')
+			{
+				document.forms[0].elements[3].value=a+b;
+			}
+			else
+				if(o=='-')
+			{
+				document.forms[0].elements[3].value=a-b;
+			}
+			else
+				if(o=='*')
+			{
+				document.forms[0].elements[3].value=a*b;
+			}
+			else
+				if(o=='/')
+			{
+				document.forms[0].elements[3].value=a/b;
+			}
+			else
+				alert("Please Try Again!");
+		}
+	</script>
+</head>
+<body>
+	<form>
+		First No.<input type="text" name="" size="20" placeholder="Enter NO.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Second No.<input type="text" name="" size="20"placeholder="Enter NO.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Enter Operation<input type="text" name="" size="20"placeholder="Enter Operation" value="  " onblur="sum();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="text" name="" size="20" disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</form>
+</body>
+</html>

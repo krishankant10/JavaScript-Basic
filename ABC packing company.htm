@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>ABC Packing Comapny</title>
+  <style type="text/css">
+  .a
+  {
+      width: 8%;
+      height:6%;
+      background-color:gray;
+      position:absolute;
+      left:39%;
+      top:25%;
+      border-radius: 7%;
+      border :1px solid black;
+      box-shadow: 3px 5px 10px black;
+  }
+  .b
+  {
+    position:absolute;
+    color: Black;
+    left:17%;
+    font-size:18px;
+    font-weight: bold;
+    text-align: center;
+
+  }
+
+  </style>
+   <script type="text/javascript">
+    function calc()
+    {
+        var a,b;
+        a=parseInt(document.forms[0].elements[0].value);
+        if(document.forms[0].elements[2].checked==true)
+        {
+            if(a<=15||a>=1)
+                b=50;
+            else if(a<=20)
+                b=45;
+            else if(a<=30)
+                b=40;
+            else if(a<=50)
+                b=35;
+            else if(a>50)
+                b=30;
+        }
+        else if(document.forms[0].elements[3].checked==true)
+        {
+                 if(a<=15||a>=1)
+                b=60;
+            else if(a<=20)
+                b=55;
+            else if(a<=30)
+                b=40;
+            else if(a<=50)
+                b=45;
+            else if(a>50)
+                b=40;
+        }
+        else
+        alert("CHOOSE Customer Type");
+        var c;
+        c=a*b;
+        if(document.forms[0].elements[4].checked==true)
+        {
+            alert("Special Customer 10% Discount");
+            c=c-c*.10;
+        }
+        document.forms[0].elements[5].value=c;
+
+    }
+  </script>
+</head>
+
+<body>
+    <form action="post">
+        <table border=2 align="center">
+            <tr>
+                <td>
+        <table>
+            <tr>
+                <td><b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ordered</b></td>
+                <td><br><input type="text" size='6'></td>
+                <td colspan='2' rowspan='2'>
+                    <fieldset>
+                        <legend>Customer Type</legend>
+                        <input type='radio' name='type'>Wholseler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <br>
+                        <input type="Radio" name='type'/>Retailer
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td><b><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Special<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;customer?</b></td>
+                <td><br><br><input type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td colspan='2' rowspan='2'>
+                    <a href="javascript:void(0);" onclick="calc();"><div class='a'><span class='b'>Calculate<br>Cost</span></div>
+                </td>
+                <td><b>Total Cost in Rs</b></td>
+                <td><input type='text' disabled='disabled' size='10'></td>
+            </tr>
+            <tr>
+                <td><br><br></td>
+            </tr>
+        </table>
+         </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

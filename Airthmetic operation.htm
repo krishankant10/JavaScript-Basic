@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Airthmetic</title>
+	<script type="text/javascript">
+		function sum()
+		{
+			var a,b;
+			a=parseInt(document.forms[0].elements[0].value);
+			b=parseInt(document.forms[0].elements[1].value);
+			var c=a+b;
+			document.forms[0].elements[2].value=c;
+		}
+		function sub()
+		{
+			var a,b;
+			a=parseInt(document.forms[0].elements[0].value);
+			b=parseInt(document.forms[0].elements[1].value);
+			var c=a-b;
+			document.forms[0].elements[2].value=c;
+		}
+		function mul()
+		{
+			var a,b;
+			a=parseInt(document.forms[0].elements[0].value);
+			b=parseInt(document.forms[0].elements[1].value);
+			var c=a*b;
+			document.forms[0].elements[2].value=c;
+		}
+		function div()
+		{
+			var a,b;
+			a=parseInt(document.forms[0].elements[0].value);
+			b=parseInt(document.forms[0].elements[1].value);
+			var c=a/b;
+			document.forms[0].elements[2].value=c;
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<b>First No.   :-  </b><input type="text" name="" size="20" placeholder="Enter No.">
+		<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Second No.  :-  </b><input type="text" name="" size="20" placeholder="Enter No."><br><br>
+		<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Result      :-  </b><input type="text" name="" size="20" disabled="disabled" id="result"><br><br><br>
+		<input type="Button" name="" value="+" style="width: 50px; height: 50px; font-size: 40px;"onclick="sum();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="Button" name="" value="-" style="width: 50px; height: 50px; font-size: 40px;"onclick="sub();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="Button" name="" value="*" style="width: 50px; height: 50px; font-size: 40px;"onclick="mul();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="Button" name="" value="/" style="width: 50px; height: 50px; font-size: 40px;"onclick="div();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</form>
+</body>
+</html>

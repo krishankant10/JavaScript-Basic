@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Dynamic Paragraph: DHTML Style</title>
+</head>
+<body>
+	<h1 align="center">The Dyanamic Paragraph</h1>
+	<hr>
+	<p id="para1">I am  a dynamic paragraph. Watch Me Dance!</p>
+	<hr>
+	<form action="#">
+		<input type="button" value="Right" onclick="para1.align='right';" name="">
+		<input type="button" value="Left" onclick="para1.align='left';" name="">
+		<input type="button" value="Center" onclick="para1.align='center';" name="">
+		<input type="button" value="Change" onclick="para1.innerText='Changed!';" name=""><br><br>
+		<input type="button" value="Right2" onclick="getElementById('para1').align='right';" name="">
+		<input type="button" value="left2" onclick="getElementById('para1').align='left';" name="">
+		<input type="button" value="center2" onclick="getElementById('para1').align='center';" name="">
+	</form>
+</body>
+</html>

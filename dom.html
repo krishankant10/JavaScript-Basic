@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Document Object Model</title>
+	<script type="text/javascript">
+		function print()
+		{
+			var l;
+			l = document.forms[0].elements.length;
+			alert("Total Forms elements are : "+l);
+			for(i=0;i<l;i++)
+			{
+				alert("Name of the Element is : "+document.forms[0].elements[i].name);
+			}
+			var name;
+			name = document.forms[0].elements[0].value;
+			alert("Welcome User : "+name+" to My Page");
+			document.forms[0].elements[1].value = name;
+			document.getElementById("first").innerHTML = name;
+			document.getElementById("second").innerHTML = "Next";
+		}
+	</script>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<h1 id="first" align="center"></h1>
+	<form>
+		<input type="text" name="txtname" size="40" placeholder="Enter Text"><br>
+		Your Name is : <input type="text" name="uname" disabled="disabled"><br>
+		<input type="button" name="" value="Button" onclick="print();">
+	</form>
+	<a href="#" id="second"></a>
+</body>
+</html>

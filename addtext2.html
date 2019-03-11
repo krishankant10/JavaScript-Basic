@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Dynamic Page Demo</title>
+	<script type="text/javascript">
+		function addText()
+		{
+			var theString;
+			theString=document.testform.newtext.value;
+			document.write("\n"+theString);
+		}
+	</script>
+</head>
+<body>
+	<div id="div1">This is some text.</div>
+	<hr>
+	<form action="#" name="testform" id="testform">
+		New Text:<input type="text" id="newtext">
+		<input type="button" value="Add" onclick="addText()" name="">
+	</form>
+</body>
+</html>

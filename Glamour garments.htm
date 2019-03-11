@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Glamour Garments</title>
+  <script type="text/javascript">
+       function disc()
+       {
+           var a;
+           a=parseInt(document.forms[0].kk.value);
+           if(a==1)
+            document.forms[0].dis.value="8%";
+           else if(a==2)
+            document.forms[0].dis.value="7%";
+           else if(a==3)
+            document.forms[0].dis.value="Nill";
+       }
+       function net()
+       {
+          var b= document.forms[0].elements[1].value
+          var a,c;
+           a=parseInt(document.forms[0].kk.value);
+           if(a==1)
+                c=b-(b*8/100);
+           else if(a==2)
+                c=b-(b*7/100);
+           else if(a==3)
+                c=b;
+            document.forms[0].elements[6].value=c;
+       }
+  </script>
+</head>
+
+<body>
+    <form action="">
+        <table align='center' border='2' width="30%">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td><p style="text-align: right">Name Of Customer</p></td>
+                            <td><input type="Text" /></td>
+                        </tr>
+                        <tr>
+                            <td><p style="text-align: right">Bill Amount</p></td>
+                            <td><input type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><p style="text-align: right">Mode Of Payment</p></td>
+                            <td><select id="kk">
+                                    <option value="1">Cash</option>
+                                    <option value="2">Cheque</option>
+                                    <option value="3">Credit Card</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><input type="Button" value="Calculate Discount" onclick='disc();'/></td>
+                            <td><input type="Button" value="Calculate Net Amount" onclick='net();'/></td>
+                        </tr>
+                        <tr>
+                            <td><p style="text-align: right">Discount</p></td>
+                            <td><input type="text" disabled="disabled" id="dis"/></td>
+                        </tr>
+                        <tr>
+                            <td><p style="text-align: right">Net Amount</p></td>
+                            <td><input type="text" disabled="disabled"/></td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

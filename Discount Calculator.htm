@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Discount Calculator</title>
+  <script type="text/javascript">
+    function dis()
+    {
+        var a,b;
+        a=parseInt(document.forms[0].elements[0].value);
+        if(a<=1000)
+            b=5;
+        else if(a>1000)
+            b=10;
+        else alert("Please Enter Cost")
+
+        if(document.forms[0].elements[2].checked==true)
+            b=b+3;
+        else if(document.forms[0].elements[3].checked==true)
+            b=b+2;
+        else if(document.forms[0].elements[4].checked==true)
+            b=b+1;
+        else alert("Please Choose ANy Category");
+        document.forms[0].elements[5].value=b+'%';
+
+    }
+  </script>
+</head>
+
+<body>
+    <form action="post">
+        <table align='center' border='2' width='50%'>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                        <td><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Enter Cost</b><br><br><br><br></td>
+                        <td><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" /><br><br><br><br></td>
+                        <td colspan='2'></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <fieldset>
+                                    <legend>Choose Category</legend>
+                                    <input type="radio" name='cat'/>Electrical Appliances<br>
+                                    <input type="radio" name='cat'/>Electrical Gadgettes<br>
+                                    <input type="radio" name='cat'/>Stationaries<br>
+                                </fieldset>
+                            </td>
+                            <td colspan='2'></td>
+                        </tr>
+                        <tr>
+                            <td><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DISCOUNT</td>
+                            <td><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" disabled='disabled'/></td>
+                            <td colspan='2'></td>
+                        </tr>
+                        <tr>
+                            <td colspan='2'></td>
+                            <td colspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td><input type="button" value='Compute Discount' onclick='dis();'/></td>
+                        </tr>
+                        <tr>
+                            <td colspan='2'></td>
+                            <td colspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td><input type="reset" value='Exit' style="width:100%;" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

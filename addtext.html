@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Dynamic Page Demo</title>
+	<script type="text/javascript">
+		function addText()
+		{
+			var thestring,theElement,insertSpot;
+			var thestring=document.createTextNode(document.testform.newtext.value);
+			theElement=document.createElement("br");
+			insertSpot=document.getElementById("div1");
+			insertSpot.appendChild(thestring);
+			insertSpot.appendChild(theElement);
+			document.testform.newtext.value=null;
+		}
+	</script>
+</head>
+<body>
+	<div id="div1">This is some text.</div>
+	<hr>
+	<form action="#" name="testform" id="testform">
+		New Text:<input type="text" name="newtext" id="newtext">
+		<input type="button" value="Add" onclick="addText()" name="">
+	</form>
+</body>
+</html>

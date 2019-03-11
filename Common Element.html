@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Common Html Events</title>
+
+</head>
+<body onload='alert("event Demo Loaded");' onunload='alert("Leaving Demo");'>
+	<h1 align="center">Core Element</h1>
+	<form action="" onreset='alert("Form Reset Succesfully");' onsubmit='alert("Form Submitted"); return false;'>
+	
+	<ul>
+		<li>
+			onblur: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" value="Click into field and then leave" size="40" onblur='alert("Lost Focus");'><br /><br />
+		</li>
+		<li>
+			onclick:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name="" value="Click Me!" onclick='alert("Button Click");'><br><br>
+		</li>
+		<li>
+			onchange:&nbsp;&nbsp;<input type="text" name="" value="Change this text And leave" size="40" onchange='confirm("Are you confirm");'><br><br>
+		</li>
+		<li>
+			ondblclick:<input type="button" name="" value="Double Click Me!" ondblclick='alert("Button Double Click");'><br><br>
+		</li>
+		<li>
+			onfocus:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="40" name="Click Into Field" onfocus='alert("Gained Focus");'><br><br>
+		</li>
+		<li>
+			onkeydown:<input type="text" name="" value="press key and realse slowely here" size="40" onkeydown='alert("Key Down");'><br><br>
+		</li>
+		<li>
+			onkeypress:<input type="text" name="" value="Type Here " size="40 " onkeypress='alert("Key Preessed");'><br><br>
+		</li>
+		<li>
+			onkeyup:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" value="Type and realse" size="40" onkeyup='alert("Key Up");'><br><br>
+		</li>
+		<li>
+			onload:  Alert presented on initial document load.<br><br>
+		</li>
+		<li>
+			onmousedown:<input type="button" name="" value="Click And hold" size="40" onmousedown='alert("Mouse Down");'><br><br>
+		</li>
+		<li>
+			onmousemove:Move Mouse Over This
+			<a href="#" onmousemove='alert("Mouse Moved");'>link</a><br><br>
+		</li>
+		<li>
+			onmouseout:Position
+			mouse <a href="#" onmouseout='alert("Mouse Out");'>Here</a> and Noe leave<br><br>
+		</li>
+		<li>
+			onmouseover: Position Mouse Over This 
+			<a href="#" onmouseover='alert("Mouse Over");'>Link</a><br><br>
+		</li>
+		<li>
+			onmouseup: <input type="button" name="" value="Click and realse" onmouseup='alert("Mouse up");'><br><br>
+		</li>
+		<li>
+			onreset:&nbsp;&nbsp;<input type="reset" name="" value="Reset Demo" ><br><br>	
+		</li>
+		<li>
+			onselect: <input type="text" name="" value="Select this Text" size="40" onselect='alert("Selected");'><br><br>
+		 </li>
+		 <li>
+		 	onsubmit:&nbsp;&nbsp;<input type="submit" name="" value="Test Submit"><br><br>
+		 </li>
+	</ul>
+</form>
+</body>
+</html>
